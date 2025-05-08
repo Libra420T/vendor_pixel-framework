@@ -59,7 +59,7 @@ class KeyguardSliceProviderGoogle : KeyguardSliceProvider(), SmartSpaceUpdateLis
     }
 
     override fun onBindSlice(sliceUri: Uri): Slice {
-        val builder = ListBuilder(context!!, mSliceUri, INFINITY)
+        val builder = ListBuilder(context!!, mSliceUri, LINEAGE)
         synchronized(this) {
             var hasAction = false
             val currentCard = smartSpaceData!!.currentCard
